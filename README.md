@@ -187,48 +187,9 @@ PUT /api/orders/{id}/: Обновить заказ по ID.
 
 PATCH /api/orders/{id}/status/: Обновить статус заказа по ID (например, на confirmed).
 
-#### Генерация отчетов:
+#### Генерация отчета:
 
-GET /api/reports/sales/?start=YYYY-MM-DD&end=YYYY-MM-DD: Сгенерировать PDF-отчет по продажам за указанный период.
-
-Пример запроса: http://127.0.0.1:8000/api/reports/sales/?start=2023-01-01&end=2023-12-31
-
-Пример запроса на создание заказа:
-POST /api/orders/
-
-```json
-{
-    "customer_id": 1,
-    "status": "draft",
-    "delivery_cost": 500,
-    "tax_percent": 12,
-    "items": [
-        {
-            "product_id": 1,
-            "quantity": 2
-        },
-        {
-            "product_id": 2,
-            "quantity": 1
-        }
-    ]
-}
-```
-
-Пример запроса на обновление статуса заказа:
-
-PATCH /api/orders/1/status/
-
-```json
-{
-    "status": "confirmed"
-}
-```
-
-Примеры PDF-отчета
-Пример PDF-отчета будет доступен для скачивания непосредственно по ссылке, сгенерированной вашим API. Например, после запуска сервера вы можете получить отчет, перейдя по следующему адресу (замените даты на нужный вам диапазон):
-
-http://127.0.0.1:8000/api/reports/sales/?start=2023-01-01&end=2023-12-31
+GET /api/reports/sales/?start=YYYY-MM-DD&end=YYYY-MM-DD: Сгенерировать PDF-отчет за указанный период.
 
 ### Тестовые данные
 
