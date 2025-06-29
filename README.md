@@ -19,7 +19,7 @@
 /api/reports/sales/?start=YYYY-MM-DD&end=YYYY-MM-DD (для генерации PDF-отчета)
 
 Стек технологий
-Python: 3.10+
+Python: 3.12+
 
 Django: 5.2.3
 
@@ -87,6 +87,7 @@ zopfli==0.2.3.post1
 Bash
 
 pip install -r requirements.txt
+
 4. Настройка базы данных и применение миграций
 Проект использует SQLite3. Файл базы данных db.sqlite3 будет создан автоматически в корневой директории проекта при выполнении команды migrate. Вам не нужно создавать его вручную.
 
@@ -94,6 +95,7 @@ Bash
 
 python manage.py makemigrations sales
 python manage.py migrate
+
 5. Запуск сервера разработки
 Bash
 
