@@ -1,0 +1,150 @@
+[
+    {
+        "model": "sales.customer",
+        "pk": 1,
+        "fields": {
+            "full_name": "Иванов Иван Иванович",
+            "email": "ivanov@example.com",
+            "company_name": "Компания А",
+            "phone": "+77001234567",
+            "discount_percent": 5,
+            "created_at": "2023-10-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "sales.customer",
+        "pk": 2,
+        "fields": {
+            "full_name": "Петров Петр Петрович",
+            "email": "petrov@example.com",
+            "company_name": "Компания Б",
+            "phone": "+77007654321",
+            "discount_percent": 10,
+            "created_at": "2023-10-02T10:00:00Z"
+        }
+    },
+    {
+        "model": "sales.customer",
+        "pk": 3,
+        "fields": {
+            "full_name": "Сидоров Сидор Сидорович",
+            "email": "sidorov@example.com",
+            "company_name": "Компания В",
+            "phone": "+77009876543",
+            "discount_percent": 0,
+            "created_at": "2023-10-03T10:00:00Z"
+        }
+    },
+    {
+        "model": "sales.product",
+        "pk": 1,
+        "fields": {
+            "name": "Товар 1",
+            "description": "Описание товара 1",
+            "price": 10000.00,
+            "stock_quantity": 50,
+            "is_active": true,
+            "discount_percent": 5
+        }
+    },
+    {
+        "model": "sales.product",
+        "pk": 2,
+        "fields": {
+            "name": "Товар 2",
+            "description": "Описание товара 2",
+            "price": 20000.00,
+            "stock_quantity": 30,
+            "is_active": true,
+            "discount_percent": 10
+        }
+    },
+    {
+        "model": "sales.product",
+        "pk": 3,
+        "fields": {
+            "name": "Товар 3",
+            "description": "Описание товара 3",
+            "price": 15000.00,
+            "stock_quantity": 20,
+            "is_active": true,
+            "discount_percent": 0
+        }
+    },
+    {
+        "model": "sales.order",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "status": "confirmed",
+            "delivery_cost": 500,
+            "tax_percent": 12,
+            "created_at": "2023-10-01T10:00:00Z",
+            "updated_at": "2023-10-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "sales.order",
+        "pk": 2,
+        "fields": {
+            "customer": 2,
+            "status": "draft",
+            "delivery_cost": 500,
+            "tax_percent": 12,
+            "created_at": "2023-10-02T10:00:00Z",
+            "updated_at": "2023-10-02T10:00:00Z"
+        }
+    },
+    {
+        "model": "sales.order",
+        "pk": 3,
+        "fields": {
+            "customer": 3,
+            "status": "shipped",
+            "delivery_cost": 0,
+            "tax_percent": 12,
+            "created_at": "2023-10-03T10:00:00Z",
+            "updated_at": "2023-10-03T10:00:00Z"
+        }
+    },
+    {
+        "model": "sales.orderitem",
+        "pk": 1,
+        "fields": {
+            "order": 1,
+            "product": 1,
+            "quantity": 2,
+            "price": 10000.00
+        }
+    },
+    {
+        "model": "sales.orderitem",
+        "pk": 2,
+        "fields": {
+            "order": 1,
+            "product": 2,
+            "quantity": 1,
+            "price": 20000.00
+        }
+    },
+    {
+        "model": "sales.orderitem",
+        "pk": 3,
+        "fields": {
+            "order": 2,
+            "product": 3,
+            "quantity": 1,
+            "price": 15000.00
+        }
+    },
+    {
+        "model": "sales.orderitem",
+        "pk": 4,
+        "fields": {
+            "order": 3,
+            "product": 1,
+            "quantity": 3,
+            "price": 10000.00
+        }
+    }
+]
