@@ -217,7 +217,7 @@ POST /api/orders/
 
 Пример запроса на обновление статуса заказа:
 
-PATCH /api/orders/1/status/ (для заказа с ID 1)
+PATCH /api/orders/1/status/
 
 ```json
 {
