@@ -1,0 +1,62 @@
+# Общие исключения для Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+*.sqlite3          # Исключаем все файлы sqlite3
+db.sqlite3        # Но включаем обратно db.sqlite3, так как это ваша основная база данных
+
+# Директории кэша и сред разработки
+.vscode/           # Исключаем специфичные файлы VS Code
+.idea/             # Исключаем специфичные файлы PyCharm
+.pytest_cache/     # Кэш Pytest
+*.swp
+*.swo
+
+# Файлы окружения
+.env               # Основной файл .env
+.env.local         # Локальные файлы .env
+*.env              # Любые файлы с расширением .env
+
+# Виртуальное окружение
+.venv/
+venv/
+ENV/
+
+# Статические файлы (собранные)
+/staticfiles/
+/static/
+
+# macOS специфичные файлы
+.DS_Store
+
+# Отчеты и кэш тестирования
+.coverage
+/htmlcov/
+
+# Временные файлы WeasyPrint
+*.tmp
+
+# Файлы бэкапов
+*.bak
+*~
+
+# Миграции Django
+# Исключаем все файлы миграций, кроме __init__.py
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Локальные настройки Django
+local_settings.py
+*/settings/local.py
+
+# Дополнительные кэш-файлы
+*.cache
+
+# Jupyter Notebook контрольные точки (если используются)
+.ipynb_checkpoints/
+
+# Специфичные файлы вашего проекта
+# Исключаем явным образом файлы, которые вы не хотите отслеживать
+/project_structure.txt
+/test_data.json
