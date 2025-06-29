@@ -27,28 +27,30 @@ Django REST Framework: 3.16.0
 
 Bash
 
-git clone <ваш_URL_репозитория_GitLab>
-cd <название_вашего_проекта> # Например, cd Test
-Создание и активация виртуального окружения
+`git clone <ваш_URL_репозитория_GitLab>
+cd <название_вашего_проекта>` # Например, cd Test
+
+### Создание и активация виртуального окружения
+
 Настоятельно рекомендуется использовать виртуальное окружение для управления зависимостями.
 
 Bash
 
-python -m venv venv
+`python -m venv venv`
 
 #### Для Windows:
 
 Bash
 
-.\venv\Scripts\activate
+`.\venv\Scripts\activate`
 
 #### Для macOS/Linux:
 
 Bash
 
-source venv/bin/activate
+`source venv/bin/activate`
 
-Установка зависимостей
+### Установка зависимостей
 
 Создайте файл requirements.txt в корне вашего проекта со следующим содержимым:
 
@@ -113,7 +115,7 @@ zopfli==0.2.3.post1
 
 Bash
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### Настройка базы данных и применение миграций
 
