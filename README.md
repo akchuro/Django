@@ -119,18 +119,20 @@ Bash
 
 ### Настройка базы данных и применение миграций
 
-Проект использует SQLite3. Файл базы данных db.sqlite3 будет создан автоматически в корневой директории проекта при выполнении команды migrate. Вам не нужно создавать его вручную.
+Проект использует SQLite3. Файл базы данных db.sqlite3 будет создан автоматически в корневой директории проекта при выполнении команды migrate
 
 Bash
 
-python manage.py makemigrations sales
-python manage.py migrate
+`python manage.py makemigrations sales`
+
+`python manage.py migrate`
 
 ### Запуск сервера разработки
 
 Bash
 
-python manage.py runserver
+`python manage.py runserver`
+
 Теперь приложение должно быть доступно по адресу http://127.0.0.1:8000/.
 
 ### Описание API
